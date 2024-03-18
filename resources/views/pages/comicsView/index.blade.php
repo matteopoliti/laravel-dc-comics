@@ -23,13 +23,15 @@
                             </figure>
                             <h5>{{ $item->series }}</h5>
                             <p>A partire da <span>{{ $item->price }} $</span></p>
-                            <p>Categoria: <span id="type">{{ $item->price }}</span></p>
+                            <p>Categoria: <span id="type">{{ $item->type }}</span></p>
                         </div>
                     @endforeach
 
 
-                    <button> Load More</button>
 
+                </div>
+                <div class="btn">
+                    <a href="{{ route('comics.create') }}">Create Comic</a>
                 </div>
             </div>
         </div>

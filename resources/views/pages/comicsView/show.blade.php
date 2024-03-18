@@ -18,6 +18,7 @@
                     <div>
                         <h3>{{ $comics->title }}</h3>
                         <p>{{ $comics->description }}</p>
+
                     </div>
                     <figure>
                         <img src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="">
