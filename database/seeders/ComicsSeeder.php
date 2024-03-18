@@ -21,7 +21,7 @@ class ComicsSeeder extends Seeder
 
             $newComics->title = $element['title'];
             $newComics->description = $element['description'];
-            $newComics->thumb = $element['type'];
+            $newComics->thumb = $element['thumb'];
             $newComics->price = $element['price'];
             $newComics->series = $element['series'];
             $newComics->sale_date = $element['sale_date'];
