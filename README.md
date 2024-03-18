@@ -28,3 +28,9 @@ e a seguire avviare il server Vite e consentire la compilazione dei file SASS (i
 ``
 npm run dev
 ``
+
+4. Per installare bootstrap usare il comando: 
+``
+npm i --save bootstrap @popperjs/core
+``
+poi inserire `@import "bootstrap/scss/bootstrap";` in scss/app.scss
