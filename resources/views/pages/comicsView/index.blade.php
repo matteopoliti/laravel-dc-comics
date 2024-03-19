@@ -16,7 +16,7 @@
                     @foreach ($comics as $item)
                         <div class="col">
                             <figure>
-                                <a href="{{ route('comics.show', ['comic' => $item['id']]) }}">
+                                <a href="{{ route('comics.show', $item->id) }}">
                                     <img src="{{ $item->thumb }}" alt="thumb comic">
                                 </a>
 
@@ -26,7 +26,7 @@
                             <p>Categoria: <span id="type">{{ $item->type }}</span></p>
 
                             <div class="options">
-                                <a href="">Edit</a>
+                                <a href="{{ route('comics.edit', $item->id) }}">Edit</a>
                                 <form action="{{ route('comics.destroy', $item->id) }}" method="POST">
                                     @csrf
                                     @method('DELETE')
