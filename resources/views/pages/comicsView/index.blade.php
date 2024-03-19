@@ -24,6 +24,15 @@
                             <h5>{{ $item->series }}</h5>
                             <p>A partire da <span>{{ $item->price }} $</span></p>
                             <p>Categoria: <span id="type">{{ $item->type }}</span></p>
+
+                            <div class="options">
+                                <a href="">Edit</a>
+                                <form action="{{ route('comics.destroy', $item->id) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit">Delete</button>
+                                </form>
+                            </div>
                         </div>
                     @endforeach
 

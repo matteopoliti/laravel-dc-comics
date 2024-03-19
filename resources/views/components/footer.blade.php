@@ -7,7 +7,7 @@
                     <a href="">
                         <li>Characters</li>
                     </a>
-                    <a href="comics">
+                    <a href="{{ route('comics.index') }}">
                         <li>Comics</li>
                     </a>
                     <a href="">
