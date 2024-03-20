@@ -6,6 +6,15 @@
     <main>
         <div class="create">
             <h2 id="title_create">Inserisci le informazioni del fumetto:</h2>
+            @if ($errors->any())
+                <div class="alert">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <form action="{{ route('comics.store') }}" method="POST">
                 @csrf
 
